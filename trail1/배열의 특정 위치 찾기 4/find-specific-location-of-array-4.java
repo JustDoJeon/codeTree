@@ -8,7 +8,6 @@ public class Main {
         int count = 0;
         int num = 0;
         int sum =0;
-        int avg =0;
 
         // 입력
         for (int i = 0; i < 10; i++) {
@@ -25,9 +24,8 @@ public class Main {
  
         }
 
-        avg = sum / count ;
         System.out.print(count+ " ");
-        System.out.print( avg );
+        System.out.print( sum );
         
     }
 }
