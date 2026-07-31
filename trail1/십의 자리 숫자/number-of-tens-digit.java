@@ -21,7 +21,8 @@ public class Main {
             if(cnt == 0 ){
                 break;
             }
-            arr[cnt/10]++;
+            int namuji = (int)cnt/10;
+            arr[namuji]++;
         }
 
         for(int i=1; i<10; i++){
