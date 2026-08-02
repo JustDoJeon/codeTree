@@ -20,7 +20,7 @@ public class Main {
         }
 
         if(idx ==-1){
-            System.out.println("NONE");
+            System.out.println("None");
         }else{
 
         System.out.println(idx);
