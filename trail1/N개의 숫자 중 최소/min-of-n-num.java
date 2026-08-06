@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -7,27 +6,24 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        int n = Integer.parseInt(br.readLine());
+
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(st.nextToken());
-        int[] arr = new int[n+1];
-
         int min = Integer.MAX_VALUE;
-        st = new StringTokenizer(br.readLine());
-        for(int i=1; i<=n; i++){
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
             int num = Integer.parseInt(st.nextToken());
-            min = Math.min(min, num);
-            arr[num]++;
+
+            if (num < min) {
+                min = num;
+                count = 1;
+            } else if (num == min) {
+                count++;
+            }
         }
 
-        System.out.println(min + " " + arr[min]);
-
-
-
-
-
-
+        System.out.println(min + " " + count);
     }
-
-
-}
+} 
