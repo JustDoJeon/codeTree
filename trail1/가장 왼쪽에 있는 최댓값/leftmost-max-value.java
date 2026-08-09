@@ -36,7 +36,7 @@ public class Main {
                     maxIdx = i;
             }
 
-            System.out.println((maxIdx + 1) + " ");
+            System.out.print((maxIdx + 1) + " ");
 
             if (maxIdx == 0) {
                 break;
