@@ -18,21 +18,28 @@ public class Main {
         // 대각선 번호
         for (int diagonal = 0; diagonal <= n + m - 2; diagonal++) {
 
-            // 대각선의 시작 행
-            int row = Math.min(diagonal, n - 1);
+            // 대각선 시작 위치
+            int row;
+            int col;
 
-            // 대각선의 시작 열
-            int col = diagonal - row;
+            if (diagonal < m) {
+                row = 0;
+                col = diagonal;
+            } else {
+                row = diagonal - m + 1;
+                col = m - 1;
+            }
 
-            // 오른쪽 위 -> 왼쪽 아래
-            while (row >= 0 && col < m) {
+            // 위 -> 아래, 오른쪽 -> 왼쪽
+            while (row < n && col >= 0) {
                 arr[row][col] = num++;
 
-                row--;
-                col++;
+                row++;
+                col--;
             }
         }
 
+        // 출력
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < n; i++) {
