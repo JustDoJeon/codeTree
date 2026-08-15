@@ -1,43 +1,3 @@
-
-Trail 1. Novice Low
-
-Chapter 9
-
-Lesson 1. 공백없는 문자열 입력받아 출력하기
-
-Warmup
-
-Challenge
-
-Test
-
-
-
-
-오늘 목표 달성까지 60XP 남았어요!
-
-30 / 90 XP
-
-기본개념
-
-문제
-
-해설
-
-제출 목록
-
-토론 (6)
-
-Approach 1
-
-문자열의 길이
-
-
-
-
-
-Code
-
 import java.util.Scanner;
 
 public class Main {
@@ -60,12 +20,3 @@ public class Main {
         System.out.println(len1 + len2);
     }
 }
-
-
-
-
-연결됨
-
-
-12345
-
