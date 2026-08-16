@@ -9,7 +9,7 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
 
         int totalLength = 0;
-        int aCount = 0;
+        int count = 0;
 
         for (int i = 0; i < n; i++) {
 
@@ -18,17 +18,12 @@ public class Main {
             // 모든 문자열 길이의 합
             totalLength += str.length();
 
-            // 첫 번째 문자열일 때만 'a' 개수 세기
-            if (i == 0) {
-                for (int j = 0; j < str.length(); j++) {
-
-                    if (str.charAt(j) == 'a') {
-                        aCount++;
-                    }
-                }
+            // 각 문자열의 첫 번째 문자가 'a'인지 확인
+            if (str.charAt(0) == 'a') {
+                count++;
             }
         }
 
-        System.out.println(totalLength + " " + aCount);
+        System.out.println(totalLength + " " + count);
     }
 }
