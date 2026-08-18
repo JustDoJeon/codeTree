@@ -21,16 +21,14 @@ public class Main {
         int len = 0;
 
         for (int i = 0; i < n; i++) {
-            if (str[i].contains(String.valueOf(c))) {
+
+            // 해당 문자로 "시작"하는지 확인
+            if (str[i].charAt(0) == c) {
                 num++;
                 len += str[i].length();
             }
         }
 
-        System.out.print(num + " ");
-
-        if (num > 0) {
-            System.out.printf("%.2f", (double) len / num);
-        }
+        System.out.printf("%d %.2f", num, (double) len / num);
     }
 }
