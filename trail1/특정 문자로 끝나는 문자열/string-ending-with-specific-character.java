@@ -14,7 +14,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             str[i] = br.readLine();
         }
-
+        boolean flag = false;
         char c = br.readLine().charAt(0);
 
         int num = 0;
@@ -24,8 +24,12 @@ public class Main {
 
             // 해당 문자로 "시작"하는지 확인
             if (str[i].charAt(str[i].length()-1) == c) {
+                flag = true;
                 System.out.println(str[i]);
             }
         }
+          if(!flag){
+                System.out.println("None");
+            }
     }
 }
