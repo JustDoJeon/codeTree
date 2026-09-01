@@ -42,7 +42,7 @@ public class Main {
         }
         
         System.out.print(n + " ");
-        print(n-1);
+        printR(n-1);
 
     }
 }
