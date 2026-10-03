@@ -30,10 +30,13 @@ public class Main {
         }
 
         for (int i = 0; i < n; i++) {
-            if(i==0){
-                sb.append(arr[i] +" ");
-            }else if((i+1) % 2 !=0){
-                sb.append( Math.round((int) arr[0] + arr[i]) /2 );
+            if((i+1)% 2 !=0){
+                int[] temp = Arrays.copyOfRange(arr, 0, i + 1);
+                Arrays.sort(temp);
+                int middle = temp.length / 2;
+                sb.append(temp[middle]).append(" ");
+
+
             }
 
         }
