@@ -40,7 +40,7 @@ public class Main {
                 count++;
 
                 if (count == k) {
-                    System.out.println(words[count]);
+                    System.out.println(word);
                     break;
                 }
             }
