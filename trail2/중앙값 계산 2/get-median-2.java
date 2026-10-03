@@ -33,7 +33,7 @@ public class Main {
             if(i==0){
                 sb.append(arr[i] +" ");
             }else if((i+1) % 2 !=0){
-                sb.append((int) (arr[0] + arr[i]) /2 +" ");
+                sb.append( Math.round((int) arr[0] + arr[i]) /2 );
             }
 
         }
