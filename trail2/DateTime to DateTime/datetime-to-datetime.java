@@ -6,10 +6,14 @@ public class Main {
         int B = sc.nextInt();
         int C = sc.nextInt();
         // Please write your code here.
-        int si = A*60*24 - 11*60*24 ;
-        int bun = B*60 - 11*60 ;
+        int si = A * 60 * 24 - 11 * 60 * 24;
+        int bun = B * 60 - 11 * 60;
         int cho = C - 11;
 
-        System.out.println(si+bun+cho);
+        if (si + bun + cho < 0) {
+            System.out.println(-1);
+        } else {
+            System.out.println(si + bun + cho);
+        }
     }
 }
