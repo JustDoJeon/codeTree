@@ -14,12 +14,12 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        final int OFF_SET = 100001;
+        final int MAX_TIME = 1_000_001;
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        int[] positionA = new int[OFF_SET];
-        int[] positionB = new int[OFF_SET];
+        int[] positionA = new int[MAX_TIME];
+        int[] positionB = new int[MAX_TIME];
         int timeA = 0;
         int curA = 0;
         for (int i = 0; i < n; i++) {
@@ -63,7 +63,7 @@ public class Main {
         }
 
         for(int t = timeB+1; t<=maxTime; t++){
-            positionB[t]  = positionA[timeB];
+            positionB[t]  = positionB[timeB];
 
         }
         int answer = 0;
