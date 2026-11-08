@@ -20,8 +20,8 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        int[] posA = new int[1001];
-        int[] posB = new int[1001];
+        int[] posA = new int[2001];
+        int[] posB = new int[2001];
 
         int timeA = 0;
         int timeB = 0;
